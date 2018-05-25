@@ -1,6 +1,6 @@
 function onLoad() {
 
-    var text = [
+    var textList = [
         "A merry little surge of electricity piped by automatic alarm from the mood organ beside his bed awakened Rick Deckard. Surprised — it always surprised him to find himself awake without prior notice — he rose from the bed, stood up in his multicolored pajamas, and stretched. Now, in her bed, his wife Iran opened her gray, unmerry eyes, blinked, then groaned and shut her eyes again.",
         "“You set your Penfield too weak,” he said to her. “I'll reset it and you'll be awake and — ”",
         "“Keep your hand off my settings.” Her voice held bitter sharpness. “I don't want to be awake.”",
@@ -31,11 +31,11 @@ function onLoad() {
         "“I'll dial for both of us,” Rick said, and led her back into the bedroom. There, at her console, he dialed 594: pleased acknowledgment of husband's superior wisdom in all matters. On his own console he dialed for a creative and fresh attitude toward his job, although this he hardly needed; such was his habitual, innate approach without recourse to Penfield artificial brain stimulation."
     ]
 
-    var root = document.getElementById('root')
-    var paras = text.map( function(para) {
+    var text = document.getElementById('text')
+    var paras = textList.map( function(para) {
         var p = document.createElement('p')
         p.innerHTML = para
-        return root.appendChild(p)   
+        return text.appendChild(p)   
     })
 } // end function onLoad()
 
