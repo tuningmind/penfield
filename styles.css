@@ -38,9 +38,10 @@ main {
   padding-left: 1vw;
 }
 #quotebox {
-  border: solid 2px;
   padding: 10px;
   font-size: 2.5em;
-  width: 60%;
+  width: 422px; 
+  position: absolute;
+  left: 18px;
 }
 
